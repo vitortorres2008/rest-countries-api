@@ -1,0 +1,12 @@
+<div class="list-card">
+    <div class="card" style="width: 18rem; margin: 40px;" *ngFor="let country of countries | filter: term">
+        <img src="{{ country.flag }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">{{ country.name }}</h4>
+            <br>
+            <h6>Population: {{ country.population }}</h6>
+            <h6>Region: {{ country.region }}</h6>
+            <h6>Capital: {{ country.capital }}</h6>
+        </div>
+    </div>
+</div>
